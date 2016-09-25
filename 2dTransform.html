@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div{
+				width: 100px;height: 100px;border: 1px solid #f66;
+				margin: 5px;
+			}
+			#translate{
+				-webkit-transform: translate(100px,100px);
+				-moz-transform: translate(100px,100px);
+				-ms-transform: translate(100px,100px);
+				-o-transform: translate(100px,100px);
+				transform: translate(100px,100px);
+			}
+			#rotate{
+				/*如果度数位正，那么是顺时针旋转，反之逆时针旋转*/
+				-webkit-transform: rotate(90deg);
+				-moz-transform: rotate(90deg);
+				-ms-transform: rotate(90deg);
+				-o-transform: rotate(90deg);
+				transform: rotate(90deg);
+			}
+			#scale{
+				/*一个参数表示X和Y都在缩放，两个参数，第一个表示的是X方向，第二个表示的是Y方向*/
+				-webkit-transform: scale(1,2);
+				-moz-transform: scale(1,2);
+				-ms-transform: scale(1,2);
+				-o-transform: scale(1,2);
+				transform: scale(1,2);
+			}
+			
+			#skew{
+				-webkit-transform: skew(30deg);
+				-moz-transform: skew(30deg);
+				-ms-transform: skew(30deg);
+				-o-transform: skew(30deg);
+				transform: skew(30deg);
+			}
+			/*#skew{
+				-webkit-transform: skew(0,90deg);
+				-moz-transform: skew(0,90deg);
+				-ms-transform: skew(0,90deg);
+				-o-transform: skew(0,90deg);
+				transform: skew(0,90deg);
+			}*/
+			/*#skew{
+				-webkit-transform: skew(30deg,30deg);
+				-moz-transform: skew(30deg,30deg);
+				-ms-transform: skew(30deg,30deg);
+				-o-transform: skew(30deg,30deg);
+				transform: skew(30deg,30deg);
+			}*/
+		</style>
+	</head>
+	<body>
+		<div id="translate">translate</div>
+		<div id="rotate">rotate</div>
+		<div id="scale">scale</div>
+		<div id="skew">skew</div>
+	</body>
+</html>
